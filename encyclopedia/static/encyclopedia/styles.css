@@ -36,3 +36,9 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}

@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {% if content == None %}
+        Page not found
+    {% else %}
+        Wiki | {{ title.capitalize }}
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {% if content == None %}
+        <div class="not-found">
+            <img src="https://image.flaticon.com/icons/png/512/103/103085.png" alt="Girl in a jacket" width="200">
+            <h3>Your requested page was not found</h3>
+        </div>
+    {% else %}
+        {{ content }}
+    {% endif %}
+{% endblock %}
